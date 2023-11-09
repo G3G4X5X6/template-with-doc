@@ -44,6 +44,7 @@ on:
     branches:
       - master
       - main
+      - doc
 permissions:
   contents: write
 jobs:
@@ -59,5 +60,8 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material
       - run: pip install mkdocs-minify-plugin
+      - run: pip install mkdocs-git-revision-date-localized-plugin
+      - run: pip install pip install mkdocs-git-committers-plugin-2
+      - run: pip install mkdocs-git-authors-plugin
       - run: mkdocs gh-deploy --force
 ```
