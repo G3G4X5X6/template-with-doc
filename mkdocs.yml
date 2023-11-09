@@ -8,7 +8,7 @@ site_description: >-
 # Repository
 repo_url: https://github.com/G3G4X5X6/template-with-doc
 repo_name: G3G4X5X6/template-with-doc
-edit_uri: template-with-doc/doc/docs/
+edit_uri: edit/doc/docs/
 
 
 
@@ -21,6 +21,8 @@ theme:
     view: material/eye
   features:
     # - announce.dismiss
+    - content.code.copy
+    - content.code.select
     - content.code.annotate
     # - content.tabs.link
     - content.tooltips
@@ -96,6 +98,7 @@ extra:
 
 # Extensions
 markdown_extensions:
+  - pymdownx.snippets
   - abbr
   - admonition
   - attr_list
@@ -112,9 +115,11 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.emoji:
       emoji_generator: !!python/name:materialx.emoji.to_svg
-      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
