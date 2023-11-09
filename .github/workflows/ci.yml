@@ -23,7 +23,4 @@ jobs:
       - run: pip install mkdocs-git-revision-date-localized-plugin
       - run: pip install pip install mkdocs-git-committers-plugin-2
       - run: pip install mkdocs-git-authors-plugin
-      - run: git branch -D gh-pages
-      - run: git checkout -t upstream/gh-pages 
-      - run: git checkout master
       - run: mkdocs gh-deploy --force
