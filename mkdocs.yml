@@ -69,8 +69,11 @@ plugins:
 
   - git-revision-date-localized:
       enable_creation_date: true
+      type: datetime
+
 
   - git-committers:
+      enabled: true
       repository: G3G4X5X6/template-with-doc
       branch: doc
 
